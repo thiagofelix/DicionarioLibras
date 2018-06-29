@@ -1,0 +1,14 @@
+{
+  "name": "dicionario-libras",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dictionary.xml": "echo Generation dic"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.gapinc.com/Th6g9z4/GapTechDictionary"
+  },
+  "author": "",
+  "license": "ISC"
+}
