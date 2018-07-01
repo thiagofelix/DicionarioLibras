@@ -3,7 +3,7 @@ Dicionário de Libras para Mac
 
 **Instalação**
 ```
-curl -k -L http://github.gapinc.com/Th6g9z4/GapTechDictionary/raw/master/go.sh | sh
+curl -k -L https://github.com/thiagofelix/DicionarioLibras/raw/master/go.sh | sh
 ```
 
 **Preferências**
