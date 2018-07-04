@@ -1,229 +1,48 @@
 @charset "UTF-8";
 @namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
 
-.apple_client-panel body {
-  line-height: 1.3em;
-  margin: 0 1em 0 1em;
-  padding: 0;
+d|entry {
 }
 
-.apple_client-panel h1, 
-.apple_client-panel h2, 
-.apple_client-panel h3, 
-.apple_client-panel h4, 
-.apple_client-panel h5, 
-.apple_client-panel h6 {
-  font-weight: normal;
-  font-size: 1em;
-  padding: 0;
-  margin: 0.3em 0 0.3em 0;
-}
-.apple_client-panel #firstHeading {
-  color:#777777;
-  margin-bottom: 0;
+h1	{
+	font-size: 150%;
+  font-family: "Baskerville";
+  text-transform: lowercase;
 }
 
-.apple_client-panel p {
-  margin: 0;
-  padding-bottom:2px;
+h3	{
+	font-size: 100%;
+  text-transform: lowercase;
 }
 
-.apple_client-panel ul, 
-.apple_client-panel ol {
-  padding-left: 1.5em;
-  margin: 0;
-}
-
-.apple_client-panel a {
-  text-decoration: none;
-  background: none;
-  color: black;
-}
-.apple_client-panel a:hover {
-  text-decoration: none;
-  cursor:default;
-}
-
-.apple_client-panel b { font-weight: normal; }
-
-.apple_client-panel * { border-bottom: none !important; }
-
-.apple_client-panel .IPA { font-family: 'Times New Roman'; }
-
-.apple_client-panel br { display: none; }
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  margin: 0;
-  padding-top: 0.5em;
-  padding-bottom: 0.2em;
-  border-bottom: 1px solid #aaa;
-  width: auto;
-}
-h1 {
-  font-size: 150%;
-  margin-bottom: 0.6em;
-}
-h2 {
-  font-size: 140%;
-  margin-bottom: 0.6em;
-}
-h3, h4, h5, h6 {
-  font-weight: 600; /* Baskerville-SemiBold */
-  border-bottom: none;
-  margin-bottom: 0.3em;
-}
-h3 { font-size: 120%; }
-h4 { font-size: 110%; }
-h5 { font-size: 100%; }
-h6 { font-size: 80%; }
-
-p img { margin: 0; }
-
-b { font-weight: 600; /* Baskerville-SemiBold */ }
-
-a {
-  text-decoration: none;
-  background: none;
-}
-a:hover { text-decoration: underline; }
-
-img {
-  border: none;
-  vertical-align: middle;
-}
-hr {
-  height: 1px;
-  color: #aaa;
-  background-color: #aaa;
-  border: 0;
-  margin: 0.2em 0 0.2em 0;
-}
-
-abbr, acronym, .explain {
-  border-bottom: 1px dotted black;
-  color: black;
-  background: none;
-  cursor: help;
-}
-q { font-style: italic; }
-
-tt, code, pre {
-  font-family: "Menlo";
-  font-size: 0.7em;
-}
-code { background-color: #f9f9f9; }
 pre {
-  padding: 1em;
-  border: 1px dashed #2f6fab;
-  color: black;
-  background-color: #f9f9f9;
-  line-height: 1.1em;
-}
-pre code, pre tt {
-  font-size: inherit;
+    /* overflow: auto; */
+    white-space: pre-wrap;
+    font-family: "Baskerville";
 }
 
-table {
-  font-size: 100%;
-  color: black;
-  background-color: white;
+span.column {
+	display: block;
+	border: solid 2px #c0c0c0;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
 }
 
-/* Language links */
-#apple_language_links {
-  display: inline;
-  float: right;
-  margin: 0.2em 0 0 0 !important;
-}
-#apple_language_links_rtl {
-  display: inline;
-  float: left;
-  margin: 0.2em 0 0 0 !important;
+div.y:before {
+    content: "/";
 }
 
-[class|="apple_language_link"] {
-  font-family: 'Lucida Grande';
-  font-size: x-small;
-  color: #666666;
-}
-[class|="apple_language_link"] a {
-  color: #666666 !important;
-  text-decoration: none !important;
-}
-[class|="apple_language_link"] a:hover {
-  text-decoration: underline !important;
-}
-#apple_language_links > li,
-#apple_language_links_rtl > li  {
-  display: inline !important;
-  clear: right;
-  float: left;
-  list-style-type: none !important;
-  list-style-image: none !important;
-  line-height: 1em;
-  margin-right: 0.5em;
-  margin-bottom: 0 !important;
-  padding: 0.4em 0.8em 0.4em 0.8em !important;
-  background-color: #DDDDDD;
-  -webkit-border-radius: 0.3em;
+div.y:after {
+    content: "/";
 }
 
-#apple_language_links > li[openingMenu="true"],
-#apple_language_links_rtl > li[openingMenu="true"] {
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-}
-.apple_language_link-item,
-.apple_language_link-item_rtl {
-  visibility: hidden;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index:100;
-  background-color: #EEEEEE;
-  border: 1px solid #DDDDDD;
-  line-height: 1em;
-  -webkit-border-radius: 0.3em 0 0.3em 0.3em;
-}
-
-.apple_language_link-item a {
-  display: block;
-  text-align: right;
-  font-style: italic;
-  padding: 0.4em 0.8em 0.4em 0.8em !important;
-}
-.apple_language_link-item_rtl a {
-  display: block;
-  text-align: left;
-  font-style: italic;
-  padding: 0.4em 0.8em 0.4em 0.8em !important;
-}
-
-/* Footer */
-.entry_end,
-#footer {
-  margin-top: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-top: 1em;
-  font-size:small;
-  text-align:center;
-  border-top: 1px solid #aaa;
-}
-
-/*========================================================================================
- *  for printer only
- *  */
-@media print
-{
-  .entry_end,
-  #apple_language_links,
-  #footer { display: none; }
-}
-
-ul, li {
-  list-style: none;
+div.y {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: "Baskerville";
+    font-size: 120%;
+    color: #333;
 }
