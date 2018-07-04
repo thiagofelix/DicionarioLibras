@@ -18,7 +18,7 @@
      <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
 
      <xsl:variable name="gif" select="substring-before(video, '.mp4')" />
-     <xsl:variable name="escape_word" select="translate(palavra,'ÁÀÂÄÉÈÊËÍÌÎÏÓÒÔÖÚÙÛÜÇ','AAAAEEEEIIIIOOOOUUUUC')" />
+     <xsl:variable name="escape_word" select="translate(palavra,'ÃÁÀÂÄÉÈÊËÍÌÎÏÓÒÔÖÚÙÛÜÇ','AAAAAEEEEIIIIOOOOUUUUC')" />
      <xsl:variable name="index" select="translate($escape_word, $uppercase, $lowercase)" />
 
     <xsl:attribute name="id">id_<xsl:number value="id"/></xsl:attribute>
@@ -29,14 +29,12 @@
      <d:index d:value="{$index}" d:title="{$index}" d:anchor="xpointer(//*[@id='{$index}'])"/>
 
      <h1><xsl:value-of select="palavra"/></h1>
+     <div>
+       <img src="https://raw.githubusercontent.com/thiagofelix/um-sinal-por-dia/site-estatico/data/gifs/{$gif}.gif" width="240" height="176"/>
+       <img src="https://raw.githubusercontent.com/thiagofelix/um-sinal-por-dia/site-estatico/data/maos/{mao}" width="50" style='float=right'/>
+     </div>
 
      <p><xsl:value-of select="acepcao"/></p>
-     <table>
-         <tr>
-           <td><img src="https://github.com/thiagofelix/um-sinal-por-dia/blob/site-estatico/data/gifs/{$gif}.gif?raw=true"/></td>
-           <td><img src="https://github.com/thiagofelix/um-sinal-por-dia/blob/site-estatico/data/maos/{mao}?raw=true" width="100"/></td>
-         </tr>
-      </table>
    </d:entry>
  </xsl:template>
  </xsl:stylesheet>

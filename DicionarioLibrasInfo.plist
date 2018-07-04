@@ -11,9 +11,9 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>DCSDictionaryCopyright</key>
-	<string>Copyright © 2007 Apple Inc.</string>
+	<string>Copyright © 2018 acessibilidadebrasil.org.br</string>
 	<key>DCSDictionaryManufacturerName</key>
-	<string>Apple Inc.</string>
+	<string>www.acessibilidadebrasil.org.br</string>
 	<key>DCSDictionaryPrefsHTML</key>
 	<string>DicionarioLibras_prefs.html</string>
 	<key>DCSDictionaryXSL</key>
@@ -23,7 +23,7 @@
 		<key>pronunciation</key>
 		<string>0</string>
 		<key>display-column</key>
-		<string>0</string>
+		<string>1</string>
 		<key>display-picture</key>
 		<string>1</string>
 		<key>version</key>
