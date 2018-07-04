@@ -19,6 +19,11 @@ Desenvolvimento
 ```
 curl -k -L https://github.com/thiagofelix/DicionarioLibras/raw/master/go.sh | sh
 ```
+***Requirements***
+* jq 
+  [`brew install jq`]
+* json2xml
+  [`npm install json2xml json2xml-cli -g`]
 
 **Build passo a passo**
 ```
