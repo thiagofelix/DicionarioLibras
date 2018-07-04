@@ -9,6 +9,8 @@ Instalação
 2. Extraia o arquivo .dictionary de dentro do arquivo .zip
 3. Copie o arquivo .dictionary para a pasta de dicionários do seu Mac.
 
+Para mais informações veja este vídeo no Youtube para aprender instalar um dicionário novo no seu computador
+https://youtu.be/PCm_AVa-XTg
 
 Desenvolvimento
 ---
