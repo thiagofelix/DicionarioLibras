@@ -1,5 +1,6 @@
 Dicionário de Libras para Mac
 =================
+![](preview.png)
 
 **Instalação**
 ```
@@ -9,7 +10,7 @@ curl -k -L https://github.com/thiagofelix/DicionarioLibras/raw/master/go.sh | sh
 **Preferências**
 
 Garanta que 'DicionarioLibras' esteja ativo no Dictionary.app -> Preferencias 
-![Dictionary Preferences](preferences.png)
+![](preferences.png  | width=100)
 
 **Build Locally**
 ```
