@@ -26,7 +26,7 @@ dictionary.xml: data.xml
 
 # Delete dictionary
 clean:
-	rm -rf {./objects,data.json,data.xml,dictionary.xml}
+	rm -rf {./objects,data.json,data.xml,dictionary.xml,Libras.dictionary}
 
 # Clean System cache
 cache:
@@ -37,11 +37,15 @@ cache:
 	rm -rf ~/Library/Caches/com.apple.Dictionary
 	rm -rf ~/Library/Caches/com.apple.DictionaryServices
 
+Libras.dictionary: ./objects/Libras.dictionary
+	echo "Creating Libras.dictionary".
+	ditto --noextattr --norsrc ./objects/Libras.dictionary	Libras.dictionary
+
 # Install the Dictionary on the System
-install: ./objects/Libras.dictionary cache
+install: Libras.dictionary cache
 	echo "Installing into ~/Library/Dictionaries".
 	mkdir -p ~/Library/Dictionaries
-	ditto --noextattr --norsrc ./objects/Libras.dictionary	~/Library/Dictionaries/Libras.dictionary
+	cp -r Libras.dictionary	~/Library/Dictionaries/Libras.dictionary
 	touch ~/Library/Dictionaries
 	echo "Done."
 	echo "To test the new dictionary, try Dictionary.app."
