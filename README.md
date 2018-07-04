@@ -1,6 +1,6 @@
 Dicionário de Libras para Mac
 =================
-![](preview.png)
+<img src="preview.png" width="350"/>
 
 **Instalação**
 ```
