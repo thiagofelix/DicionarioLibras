@@ -17,6 +17,9 @@ https://youtu.be/PCm_AVa-XTg
 Desenvolvimento
 ---
 
+**Dependencies**
+* json2xml-cli
+
 **Build rápido**
 ```
 curl -k -L https://github.com/thiagofelix/DicionarioLibras/raw/master/go.sh | sh
